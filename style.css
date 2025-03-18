@@ -119,6 +119,7 @@ body {
   position: relative;
   width: 100%;
   font-size: 60px;
+  font-family: neuton_regular;
 }
 #insta-text-inner{
   position: relative;
@@ -127,6 +128,7 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
   left: 30%;
+  font-family: neuton_regular;
 }
 #pending-icon{
   width: 200px;
@@ -155,7 +157,6 @@ body {
   display: flex;
   align-items: stretch; /* Align text and image in one row */
   gap: 15px; /* Add space between text and image */
-  margin-top: 10px;
 }
 
 #top_row {
@@ -191,11 +192,12 @@ body {
     font-size: 50px;
   }
   #insta-text{
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 40px;
+    margin-bottom: 10px;
   }
   #insta-text-inner{
-    font-size: 40px;
+    font-size: 35px;
     text-decoration: none;
   }
   #pending-icon{
@@ -238,11 +240,11 @@ body {
     margin-top: 10px; /* Add space if needed */
   }
   #insta-text{
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 15px;
   }
   #insta-text-inner{
-    font-size: 40px;
+    font-size: 35px;
   }
   #insta {
     width: 60px;
@@ -260,11 +262,11 @@ body {
     margin-top: 10px; /* Add space if needed */
   }
   #insta-text{
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 25px;
   }
   #insta-text-inner{
-    font-size: 50px;
+    font-size: 45px;
   }
   #insta {
     width: 80px;
@@ -280,10 +282,10 @@ body {
     font-size: 80px;
   }
   #insta-text{
-    font-size: 60px;
+    font-size: 50px;
   }
   #insta-text-inner{
-    font-size: 60px;
+    font-size: 50zpx;
   }
   #insta {
     width: 80px;
