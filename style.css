@@ -1,0 +1,151 @@
+@font-face {
+    font-family: neuton_regular;
+    src: url(neuton/Neuton-Regular.ttf);
+}
+@font-face {
+    font-family: bright_horizon;
+    src: url(Soria\ font.ttf);
+}
+body {
+  background-image: url('background.jpeg');
+  margin: 0;
+  background-size: 100%;
+}
+* {box-sizing: border-box;}
+.header {
+    overflow: hidden;
+    background-color: #fffcf6;
+    padding: 25px 10px;
+    width: 100%;
+}
+
+.right-elements{
+    margin-left: -3px;
+}
+
+.inner-element {
+    display: inline-block;
+    border-right: 2px solid #565b67;
+    padding-right: 5px;
+}
+.right-element {
+    display: inline-block;
+}
+
+.header a {
+  float: left;
+  color: #565b67;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 25px;
+  border-radius: 4px;
+  padding-left: 20px;
+  font-family: neuton_regular;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-family: neuton_regular;
+  color: #525b67;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.header-right {
+  float: right;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-row {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+}
+.image-box:hover {
+  border: 0px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.image-box:hover .image-text {
+  color: #fffcf6;
+}
+.image-box {
+  width: 300px;
+  height: 400px;
+  margin: 50px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: solid 3.5px #fffcf6;
+  transition: transform 0.5s;
+  display: inline-block;
+  position: relative;
+  background-size: 100%;
+}
+.image-text {
+  text-align: center;
+  font-size: 47px;
+  font-family: bright_horizon;
+  color: #565b67;
+  padding: 10px;
+  position: absolute;
+  width: 250px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pending {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align items */
+}
+#pending-text{
+  font-size: 80px;
+  width: 100%;
+  position: relative;
+}
+#pending-icon{
+  width: 200px;
+  height: 120px;
+  margin-top: 10px; /* Add space if needed */
+}
+
+/* Resize images */
+#pending-icon img {
+    width: 100%;
+    height: auto;
+}
+
+#top_row {
+  margin-top: 60px;
+}
+#image_1:hover {
+  background-image: url('images/image_1.jpeg');
+}
+#image_2:hover {
+  background-image: url('images/image_2.jpeg');
+}
+#image_3:hover {
+  background-image: url('images/image_3.jpeg');
+}
+#image_4:hover {
+  background-image: url('images/image_4.jpeg');
+}
+#image_5:hover {
+  background-image: url('images/image_5.jpeg');
+}
+#image_6:hover {
+  background-image: url('images/image_6.jpeg');
+}
+.footer {
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
