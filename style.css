@@ -180,7 +180,7 @@ body {
   background-image: url('images/image_6.jpeg');
 }
 .footer {
-  height: 100px;
+  height: 400px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -192,6 +192,7 @@ body {
   }
   #insta-text{
     font-size: 40px;
+    margin-top: 40px;
   }
   #insta-text-inner{
     font-size: 40px;
@@ -238,6 +239,7 @@ body {
   }
   #insta-text{
     font-size: 40px;
+    margin-top: 15px;
   }
   #insta-text-inner{
     font-size: 40px;
@@ -259,6 +261,7 @@ body {
   }
   #insta-text{
     font-size: 50px;
+    margin-top: 25px;
   }
   #insta-text-inner{
     font-size: 50px;
