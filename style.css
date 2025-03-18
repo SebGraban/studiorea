@@ -6,6 +6,10 @@
     font-family: bright_horizon;
     src: url(Soria\ font.ttf);
 }
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Keep default text color */
+}
 body {
   background-image: url('background.jpeg');
   margin: 0;
@@ -26,7 +30,7 @@ body {
 
 .inner-element {
     display: inline-block;
-    border-right: 2px solid #565b67;
+    border-right: 2px solid #424856;
     padding-right: 5px;
 }
 .right-element {
@@ -35,7 +39,7 @@ body {
 
 .header a {
   float: left;
-  color: #565b67;
+  color: #424856;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -49,7 +53,7 @@ body {
 .header a.logo {
   font-size: 40px;
   font-family: neuton_regular;
-  color: #525b67;
+  color: #424856;
   padding-top: 10px;
   padding-left: 40px;
 }
@@ -93,7 +97,7 @@ body {
   text-align: center;
   font-size: 47px;
   font-family: bright_horizon;
-  color: #565b67;
+  color: #424856;
   padding: 10px;
   position: absolute;
   width: 250px;
@@ -111,6 +115,19 @@ body {
   width: 100%;
   position: relative;
 }
+#insta-text{
+  position: relative;
+  width: 100%;
+  font-size: 60px;
+}
+#insta-text-inner{
+  position: relative;
+  width: 100%;
+  font-size: 60px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  left: 30%;
+}
 #pending-icon{
   width: 200px;
   height: 120px;
@@ -121,6 +138,24 @@ body {
 #pending-icon img {
     width: 100%;
     height: auto;
+}
+#insta {
+  color: #424856;
+  width: 80px;
+  height: auto;
+  vertical-align: middle; /* Ensure vertical alignment */
+}
+#insta-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Aligns items vertically */
+  gap: 10px; /* Adds space between image and text */
+}
+.text-image {
+  display: flex;
+  align-items: stretch; /* Align text and image in one row */
+  gap: 15px; /* Add space between text and image */
+  margin-top: 10px;
 }
 
 #top_row {
@@ -155,6 +190,15 @@ body {
   #pending-text{
     font-size: 50px;
   }
+  #insta-text{
+    font-size: 40px;
+    margin-top: 60px;
+  }
+  #insta-text-inner{
+    font-size: 40px;
+    margin-top: 60px;
+    text-decoration: none;
+  }
   #pending-icon{
     width: 140px;
     height: 90px;
@@ -179,6 +223,9 @@ body {
     bottom: 0;
     width: 100%;
   }
+  #insta {
+    width: 50px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -190,6 +237,15 @@ body {
     width: 160px;
     height: 100px;
     margin-top: 10px; /* Add space if needed */
+  }
+  #insta-text{
+    font-size: 40px;
+  }
+  #insta-text-inner{
+    font-size: 40px;
+  }
+  #insta {
+    width: 60px;
   }
 }
 
@@ -203,6 +259,15 @@ body {
     height: 110px;
     margin-top: 10px; /* Add space if needed */
   }
+  #insta-text{
+    font-size: 50px;
+  }
+  #insta-text-inner{
+    font-size: 50px;
+  }
+  #insta {
+    width: 80px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -212,5 +277,14 @@ body {
   }
   #pending-text{
     font-size: 80px;
+  }
+  #insta-text{
+    font-size: 60px;
+  }
+  #insta-text-inner{
+    font-size: 60px;
+  }
+  #insta {
+    width: 80px;
   }
 }
