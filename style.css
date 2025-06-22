@@ -1,293 +1,323 @@
 @font-face {
-    font-family: neuton_regular;
-    src: url(neuton/Neuton-Regular.ttf);
+  font-family: neuton_regular;
+  src: url(neuton/Neuton-Regular.ttf);
 }
 @font-face {
-    font-family: bright_horizon;
-    src: url(Soria\ font.ttf);
+  font-family: bright_horizon;
+  src: url(Soria\ font.ttf);
 }
 a {
-  text-decoration: none; /* Remove default underline */
-  color: inherit; /* Keep default text color */
+text-decoration: none;
+color: inherit;
 }
 body {
-  background-image: url('background.jpeg');
-  margin: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+background-image: url('background.jpeg');
+margin: 0;
+background-size: cover;
+background-repeat: no-repeat;
 }
 * {box-sizing: border-box;}
+
 .header {
-    overflow: hidden;
-    background-color: #fffcf6;
-    padding: 25px 10px;
-    width: 100%;
+  overflow: hidden;
+  background-color: #fffefa;
+  padding: 25px 10px;
+  width: 100%;
 }
 
 .right-elements{
-    margin-left: -3px;
+  margin-left: -3px;
 }
 
 .inner-element {
-    display: inline-block;
-    border-right: 2px solid #424856;
-    padding-right: 5px;
+  display: inline-block;
+  border-right: 2px solid #424856;
+  padding-right: 5px;
 }
 .right-element {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header a {
-  float: left;
-  color: #424856;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 25px; 
-  line-height: 25px;
-  border-radius: 4px;
-  padding-left: 20px;
-  font-family: neuton_regular;
+float: left;
+color: #424856;
+text-align: center;
+padding: 12px;
+font-size: 25px; 
+line-height: 25px;
+border-radius: 4px;
+padding-left: 20px;
+font-family: neuton_regular;
 }
 
 .header a.logo {
-  font-size: 40px;
-  font-family: neuton_regular;
-  color: #424856;
-  padding-top: 10px;
-  padding-left: 40px;
+font-size: 40px;
+font-family: neuton_regular;
+color: #424856;
+padding-top: 10px;
+padding-left: 40px;
 }
 
 .header-right {
-  float: right;
+float: right;
 }
-
+body {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+body::-webkit-scrollbar { 
+display: none;
+}
 .content {
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+width: 100%;
+display: grid;
+justify-content: center;
+align-items: center;
 }
 .gallery-row {
-  display: grid;
-  justify-content: center;
-  margin: 20px;
+display: grid;
+justify-content: center;
+margin: 20px;
 }
 .image-box:hover {
-  border: 0px;
-  transform: scale(1.1);
-  cursor: pointer;
+border: 0px;
+transform: scale(1.1);
+cursor: pointer;
 }
 .image-box:hover .image-text {
-  color: #fffcf6;
+color: #fffefa;
 }
 .image-box {
-  width: 300px;
-  height: 400px;
-  margin: 50px;
-  margin-top: 20px;
-  border-radius: 30px;
-  border: solid 3.5px #fffcf6;
-  transition: transform 0.5s;
-  display: inline-block;
-  position: relative;
-  background-size: 100%;
+width: 300px;
+height: 400px;
+margin: 50px;
+margin-top: 20px;
+border-radius: 30px;
+border: solid 3.5px #fffefa;
+transition: transform 0.5s;
+display: inline-block;
+position: relative;
+background-size: 100%;
 }
 .image-text {
-  text-align: center;
-  font-size: 47px;
-  font-family: bright_horizon;
-  color: #424856;
-  padding: 10px;
-  position: absolute;
-  width: 250px;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+text-align: center;
+font-size: 47px;
+font-family: bright_horizon;
+color: #424856;
+padding: 10px;
+position: absolute;
+width: 250px;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 .pending {
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center align items */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#pending-text{
+font-size: 80px;
+width: 100%;
+position: relative;
+}
+#insta-text{
+position: relative;
+width: 100%;
+font-size: 60px;
+font-family: neuton_regular;
+}
+#insta-text-inner{
+position: relative;
+width: 100%;
+font-size: 60px;
+margin-bottom: 0;
+padding-bottom: 0;
+left: 30%;
+font-family: neuton_regular;
+}
+#pending-icon{
+width: 200px;
+height: 120px;
+margin-top: 10px;
+}
+#pending-icon img {
+  width: 100%;
+  height: auto;
+}
+#insta {
+color: #424856;
+width: 80px;
+height: auto;
+vertical-align: middle;
+}
+#insta-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+.text-image {
+display: flex;
+align-items: stretch;
+gap: 15px;
+}
+#top_row {
+margin-top: 60px;
+}
+#image_1:hover {
+background-image: url('images/image_1.jpg');
+}
+#image_2:hover {
+background-image: url('images/image_2.jpg');
+}
+#image_3:hover {
+background-image: url('images/image_3.jpg');
+}
+#image_4:hover {
+background-image: url('images/image_4.jpeg');
+}
+#image_5:hover {
+background-image: url('images/image_5.jpeg');
+}
+#image_6:hover {
+background-image: url('images/image_6.jpeg');
+}
+.footer {
+height: 400px;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+#pending-text{
+  font-size: 50px;
+}
+#insta-text{
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#insta-text-inner{
+  font-size: 35px;
+  text-decoration: none;
+}
+#pending-icon{
+  width: 140px;
+  height: 90px;
+  margin-top: 10px;
+}
+.header a {
+  padding: 12px;
+  font-size: 20px; 
+  line-height: 20px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+.header a.logo {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.footer {
+  height: 500px;
+}
+#insta {
+  width: 50px;
+}
+}
+
+@media screen and (min-width: 600px) {
+#pending-text{
+  font-size: 60px;
+}
+#pending-icon{
+  width: 160px;
+  height: 100px;
+}
+#insta-text{
+  font-size: 35px;
+  margin-top: 15px;
+}
+#insta-text-inner{
+  font-size: 35px;
+}
+#insta {
+  width: 60px;
+}
+}
+
+@media screen and (min-width: 768px) {
+#pending-text{
+  font-size: 70px;
+}
+#pending-icon{
+  width: 180px;
+  height: 110px;
+}
+#insta-text{
+  font-size: 45px;
+  margin-top: 25px;
+}
+#insta-text-inner{
+  font-size: 45px;
+}
+#insta {
+  width: 80px;
+}
+}
+
+@media screen and (min-width: 992px) {
+.header {
+    padding: 25px 10px;
 }
 #pending-text{
   font-size: 80px;
-  width: 100%;
-  position: relative;
 }
 #insta-text{
-  position: relative;
-  width: 100%;
-  font-size: 60px;
-  font-family: neuton_regular;
+  font-size: 50px;
 }
 #insta-text-inner{
-  position: relative;
-  width: 100%;
-  font-size: 60px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  left: 30%;
-  font-family: neuton_regular;
-}
-#pending-icon{
-  width: 200px;
-  height: 120px;
-  margin-top: 10px; /* Add space if needed */
-}
-
-/* Resize images */
-#pending-icon img {
-    width: 100%;
-    height: auto;
+  font-size: 50px;
 }
 #insta {
-  color: #424856;
   width: 80px;
-  height: auto;
-  vertical-align: middle; /* Ensure vertical alignment */
 }
-#insta-container {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Aligns items vertically */
-  gap: 10px; /* Adds space between image and text */
-}
-.text-image {
-  display: flex;
-  align-items: stretch; /* Align text and image in one row */
-  gap: 15px; /* Add space between text and image */
 }
 
-#top_row {
-  margin-top: 60px;
-}
-#image_1:hover {
-  background-image: url('images/image_1.jpeg');
-}
-#image_2:hover {
-  background-image: url('images/image_2.jpeg');
-}
-#image_3:hover {
-  background-image: url('images/image_3.jpeg');
-}
-#image_4:hover {
-  background-image: url('images/image_4.jpeg');
-}
-#image_5:hover {
-  background-image: url('images/image_5.jpeg');
-}
-#image_6:hover {
-  background-image: url('images/image_6.jpeg');
-}
-.footer {
-  height: 400px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-  #pending-text{
-    font-size: 50px;
-  }
-  #insta-text{
-    font-size: 35px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-  #insta-text-inner{
-    font-size: 35px;
-    text-decoration: none;
-  }
-  #pending-icon{
-    width: 140px;
-    height: 90px;
-    margin-top: 10px; /* Add space if needed */
-  }
-  .header a {
-    padding: 12px;
-    font-size: 20px; 
-    line-height: 20px;
-    border-radius: 4px;
-    padding-left: 10px;
-  }
-  
-  .header a.logo {
-    font-size: 30px;
-    padding-top: 10px;
-    padding-left: 20px;
-  }
-  .footer {
-    height: 500px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-  #insta {
-    width: 50px;
-  }
+/* Snapping Gallery */
+.gallery-section {
+height: 100vh;
+scroll-snap-align: start;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) {
-  #pending-text{
-    font-size: 60px;
-  }
-  #pending-icon{
-    width: 160px;
-    height: 100px;
-    margin-top: 10px; /* Add space if needed */
-  }
-  #insta-text{
-    font-size: 35px;
-    margin-top: 15px;
-  }
-  #insta-text-inner{
-    font-size: 35px;
-  }
-  #insta {
-    width: 60px;
-  }
+.text-content {
+background-color: #fffefa;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  #pending-text{
-    font-size: 70px;
-  }
-  #pending-icon{
-    width: 180px;
-    height: 110px;
-    margin-top: 10px; /* Add space if needed */
-  }
-  #insta-text{
-    font-size: 45px;
-    margin-top: 25px;
-  }
-  #insta-text-inner{
-    font-size: 45px;
-  }
-  #insta {
-    width: 80px;
-  }
+body, html {
+scroll-snap-type: y mandatory;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-  .header {
-      padding: 25px 10px;
-  }
-  #pending-text{
-    font-size: 80px;
-  }
-  #insta-text{
-    font-size: 50px;
-  }
-  #insta-text-inner{
-    font-size: 50zpx;
-  }
-  #insta {
-    width: 80px;
-  }
+/* Allow snapping for inner sections while respecting the header */
+.gallery-body {
+display: flex;
+width: 100%;
+height: calc(100vh - 96px); /* subtract estimated header height */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contact-title {
+  font-family: bright_horizon;
+  color: #424856;
+}
+
+.contact-text {
+  font-family: neuton_regular;
+  color: #424856;
 }

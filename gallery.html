@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Snap 1: Header + First Section in One Block -->
+    <section class="gallery-section">
+        <div class="header">
+            <a href="index.html" class="logo">rea</a>
+            <div class="header-right">
+                <div class="inner-element">
+                    <a class="active" href="#Gallery">gallery</a>
+                </div>
+                <div class="inner-element right-elements">
+                    <a href="about.html">about</a>
+                </div>
+                <div class="right-element right-elements">
+                    <a href="contact.html">contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-body mx-auto max-w-8xl px-10 h-[calc(100vh-96px)] flex" id="artwork1">
+            <!-- Header assumed ~96px high, adjust if needed -->
+            <div class="w-2/3 h-full">
+                <img src="images/girrafe_landscape.jpg" alt="Artwork 1" class="object-cover w-full h-full">
+            </div>
+            <div class="w-1/3 h-full flex items-center justify-center p-8 text-content">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Artwork Title 1</h2>
+                    <p class="text-lg text-gray-700">Description of the artwork. This text describes the inspiration, medium, or context of the piece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snap 2 -->
+    <section class="gallery-section flex mx-auto max-w-8xl px-10" id="artwork2">
+        <div class="w-1/3 h-full flex items-center justify-center p-8 text-content">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Artwork Title 2</h2>
+                <p class="text-lg text-gray-700">Another descriptive text about this second piece of artwork, its techniques or background story.</p>
+            </div>
+        </div>
+        <div class="w-2/3 h-full">
+            <img src="images/elephant_landscape.jpg" alt="Artwork 2" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- Snap 3 -->
+    <section class="gallery-section flex mx-auto max-w-8xl px-10" id="artwork3">
+        <div class="w-2/3 h-full">
+            <img src="images/school_landscape.jpg" alt="Artwork 2" class="object-cover w-full h-full">
+        </div>
+        <div class="w-1/3 h-full flex items-center justify-center p-8 text-content">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Artwork Title 3</h2>
+                <p class="text-lg text-gray-700">Another descriptive text about this second piece of artwork, its techniques or background story.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
